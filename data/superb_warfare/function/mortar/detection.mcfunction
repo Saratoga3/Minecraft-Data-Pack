@@ -48,7 +48,7 @@
 #使用者與迫擊砲物動的物品
 
     #射擊諸元-改
-    execute as @e[tag=!mortar_parameter] if data entity @s Inventory[{components: {"minecraft:item_name": '"射擊諸元-改"'}, id: "superbwarfare:firing_parameters"}] run function superb_warfare:mortar/item
+    execute as @e[tag=!mortar_parameter] if data entity @s Inventory[{components: {"minecraft:custom_name": '"射擊諸元-改"'}, id: "superbwarfare:firing_parameters"}] run function superb_warfare:mortar/item
 
 #手動輸入砲擊座標
 
