@@ -1,4 +1,4 @@
-# Minecraft `.mcfunction` 功能資料包(1.21.)
+# Minecraft `.mcfunction` 功能資料包(1.21.1)
 
 這是一個使用 Minecraft 原生 `.mcfunction` 檔案語言撰寫的資料包（Data Pack）專案，透過指令自動化遊戲機制、添加新功能或擴展原有的玩法。
 
