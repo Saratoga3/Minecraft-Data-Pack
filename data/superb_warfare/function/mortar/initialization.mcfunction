@@ -3,7 +3,7 @@
 #召喚觀測手
 
     #
-    execute unless entity mortar_1 at mortar_2 run player mortar_1 spawn at ~ ~ ~1 facing 120 20 in minecraft:overworld in creative
+    execute at @e[tag=mortar_1,type=armor_stand] unless entity mortar_1 run player mortar_1 spawn at ^1 ^ ^1 facing ~30 20 in minecraft:overworld in creative
 
 #清除效果
 

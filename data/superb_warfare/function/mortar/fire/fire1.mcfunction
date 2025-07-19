@@ -3,7 +3,7 @@
 #前往迫擊砲並點擊開火
 
     #
-    execute as mortar_2 at @e[tag=mortar_1,type=armor_stand] positioned ^ ^ ^1 rotated 90 20 run tp ~ ~ ~
+    execute as mortar_2 at @e[tag=mortar_1,type=armor_stand] positioned ^ ^ ^1 rotated ~ 20 run tp ~ ~ ~
 
     #
     execute run player mortar_2 use once

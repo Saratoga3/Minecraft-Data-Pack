@@ -76,10 +76,10 @@
 #固定假人
 
     #mortar_2
-    execute as mortar_2 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^ ^ ^1 rotated 90 20 run tp ~ ~ ~
+    execute as mortar_2 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^ ^ ^1 rotated ~ 20 run tp ~ ~ ~
 
     #mortar_1
-    execute as mortar_1 at @s unless entity @e[tag=mortar_target] positioned as mortar_2 rotated 120 20 run tp ~ ~ ~1
+    execute as mortar_1 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^1 ^ ^1 rotated ~30 20 run tp ~ ~ ~
 
 #計時器歸零
 

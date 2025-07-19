@@ -11,7 +11,7 @@ scoreboard players add count mortar_probability 1
 #回到迫擊砲並點擊輸入落彈點座標
 
     #
-    execute as mortar_1 at @e[tag=mortar_1,type=armor_stand] positioned ^1 ^ ^1 rotated 120 20 run tp ~ ~ ~
+    execute as mortar_1 at @e[tag=mortar_1,type=armor_stand] positioned ^1 ^ ^1 rotated ~30 20 run tp ~ ~ ~
 
     #
     player mortar_1 use once

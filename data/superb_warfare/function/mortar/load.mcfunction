@@ -72,7 +72,7 @@
 #召喚砲手
 
     #
-    execute at @e[tag=mortar_1,type=armor_stand] unless entity mortar_2 run player mortar_2 spawn at ^ ^ ^1 facing 90 20 in minecraft:overworld in survival
+    execute at @e[tag=mortar_1,type=armor_stand] unless entity mortar_2 run player mortar_2 spawn at ^ ^ ^1 facing ~ 20 in minecraft:overworld in survival
 
 #初始化
 
