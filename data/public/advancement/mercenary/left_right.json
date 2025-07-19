@@ -1,0 +1,31 @@
+{
+    "display":{
+        "icon":{
+            "id":"shears"
+        },
+        "title":"左右不分",
+        "description":"用剪刀打羊",
+        "announce_to_chat":true,
+        "frame":"task",
+        "hidden":false,
+        "show_toast":true
+    },
+    "parent":"public:mercenary/mercenary",
+    "criteria":{
+        "left_right":{
+            "trigger":"player_hurt_entity",
+            "conditions":{
+                "entity":{
+                    "type":"sheep"
+                },
+                "player":{
+                    "equipment":{
+                        "mainhand":{
+                            "items":["shears"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "display":{
+        "icon":{
+            "id":"tnt"
+        },
+        "title":"我先去埋點馬鈴薯",
+        "description":"戰術就是把他們炸飛，對吧？",
+        "announce_to_chat":true,
+        "frame":"task",
+        "hidden":false,
+        "show_toast":true
+    },
+    "parent":"public:mercenary/mercenary",
+    "criteria":{
+        "tnt":{
+            "trigger":"placed_block",
+            "conditions":{
+                "location":[{"block":"tnt","condition":"block_state_property","properties":{}}],
+                "player":{}
+            }
+        }
+    }
+}

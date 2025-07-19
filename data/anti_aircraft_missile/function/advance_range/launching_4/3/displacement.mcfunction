@@ -1,0 +1,13 @@
+#取得目標15位移量
+
+#取得X位移量
+scoreboard players operation displacement_15_X anti_aircraft_missile_set = target_15_posX anti_aircraft_missile_set
+scoreboard players operation displacement_15_X anti_aircraft_missile_set -= target_15_pre_posX anti_aircraft_missile_set
+
+#取得Y位移量
+scoreboard players operation displacement_15_Y anti_aircraft_missile_set = target_15_posY anti_aircraft_missile_set
+scoreboard players operation displacement_15_Y anti_aircraft_missile_set -= target_15_pre_posY anti_aircraft_missile_set
+
+#取得Z位移量
+scoreboard players operation displacement_15_Z anti_aircraft_missile_set = target_15_posZ anti_aircraft_missile_set
+scoreboard players operation displacement_15_Z anti_aircraft_missile_set -= target_15_pre_posZ anti_aircraft_missile_set

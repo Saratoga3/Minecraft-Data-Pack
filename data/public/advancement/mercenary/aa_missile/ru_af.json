@@ -1,0 +1,24 @@
+{
+    "display":{
+        "icon":{
+            "id":"armor_stand"
+        },
+        "title":"俄羅斯空軍",
+        "description":"被防空雷達鎖定",
+        "announce_to_chat":true,
+        "frame":"goal",
+        "hidden":true,
+        "show_toast":true
+    },
+    "parent":"public:mercenary/mercenary",
+    "criteria":{
+        "ru_af":{
+            "trigger":"tick",
+            "conditions":{
+                "player":{
+                    "nbt":"{Tags:['anti_aircraft_missile_target']}"
+                }
+            }
+        }
+    }
+}

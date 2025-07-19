@@ -1,0 +1,30 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "stone",
+                    "weight": 3,
+                    "functions": [],
+                    "conditions": [
+                        {
+                            "condition": "damage_source_properties",
+                            "predicate": {
+                                "is_direct":true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "stone_axe",
+                    "weight": 1,
+                    "functions": []
+                }
+            ]
+        }
+    ]
+}

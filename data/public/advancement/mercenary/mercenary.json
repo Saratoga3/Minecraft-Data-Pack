@@ -1,0 +1,30 @@
+{
+    "display":{
+        "icon":{
+            "id":"player_head"
+        },
+        "title":"生於黑夜",
+        "description":[{"text":"在minecraft開啟一段傳奇傭兵之旅","color":"green"}],
+        "background":"minecraft:textures/block/stone.png",
+        "announce_to_chat":true,
+        "frame":"task",
+        "hidden":false,
+        "show_toast":true
+    },
+    "criteria":{
+        "mercenary":{
+            "trigger":"player_killed_entity",
+            "conditions":{
+                "entity":{
+                    "type":["player"]
+                },
+                "killing_blow":{
+                    "source_entity":{
+                        "type":["player"]
+                    }
+                },
+                "player":{}
+            }
+        }
+    }
+}

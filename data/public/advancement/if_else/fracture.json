@@ -1,0 +1,16 @@
+{
+    "criteria":{
+        "fracture":{
+            "trigger":"fall_from_height",
+            "conditions":{
+                "distance":{
+                    "y":{
+                        "min":10
+                    }
+                }
+            }
+        }
+    },
+    "rewards":{
+    }
+}

@@ -1,0 +1,13 @@
+#取得目標2位移量
+
+#取得X位移量
+scoreboard players operation displacement_2_X anti_aircraft_missile_set = target_2_posX anti_aircraft_missile_set
+scoreboard players operation displacement_2_X anti_aircraft_missile_set -= target_2_pre_posX anti_aircraft_missile_set
+
+#取得Y位移量
+scoreboard players operation displacement_2_Y anti_aircraft_missile_set = target_2_posY anti_aircraft_missile_set
+scoreboard players operation displacement_2_Y anti_aircraft_missile_set -= target_2_pre_posY anti_aircraft_missile_set
+
+#取得Z位移量
+scoreboard players operation displacement_2_Z anti_aircraft_missile_set = target_2_posZ anti_aircraft_missile_set
+scoreboard players operation displacement_2_Z anti_aircraft_missile_set -= target_2_pre_posZ anti_aircraft_missile_set

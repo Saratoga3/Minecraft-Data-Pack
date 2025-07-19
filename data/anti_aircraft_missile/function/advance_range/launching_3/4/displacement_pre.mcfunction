@@ -1,0 +1,14 @@
+#取得前一個目標12座標
+
+#確保沒有前一個XYZ目標12座標時，以目標12座XYZ標作為前置量
+execute if score missile_12 anti_aircraft_missile_set matches ..5 run scoreboard players operation target_12_pre_posX anti_aircraft_missile_set = target_12_posX anti_aircraft_missile_set
+execute if score missile_12 anti_aircraft_missile_set matches ..5 run scoreboard players operation target_12_pre_posY anti_aircraft_missile_set = target_12_posY anti_aircraft_missile_set
+execute if score missile_12 anti_aircraft_missile_set matches ..5 run scoreboard players operation target_12_pre_posZ anti_aircraft_missile_set = target_12_posZ anti_aircraft_missile_set
+
+#取得目標12位移量
+function anti_aircraft_missile:advance_range/launching_3/4/displacement
+
+#將目標12的XYZ座標作為前一個XYZ座標
+scoreboard players operation target_12_pre_posX anti_aircraft_missile_set = target_12_posX anti_aircraft_missile_set
+scoreboard players operation target_12_pre_posY anti_aircraft_missile_set = target_12_posY anti_aircraft_missile_set
+scoreboard players operation target_12_pre_posZ anti_aircraft_missile_set = target_12_posZ anti_aircraft_missile_set

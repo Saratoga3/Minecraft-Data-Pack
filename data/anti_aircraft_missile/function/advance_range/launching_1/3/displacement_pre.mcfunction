@@ -1,0 +1,14 @@
+#取得前一個目標3座標
+
+#確保沒有前一個XYZ目標3座標時，以目標3座XYZ標作為前置量
+execute if score missile_3 anti_aircraft_missile_set matches ..5 run scoreboard players operation target_3_pre_posX anti_aircraft_missile_set = target_3_posX anti_aircraft_missile_set
+execute if score missile_3 anti_aircraft_missile_set matches ..5 run scoreboard players operation target_3_pre_posY anti_aircraft_missile_set = target_3_posY anti_aircraft_missile_set
+execute if score missile_3 anti_aircraft_missile_set matches ..5 run scoreboard players operation target_3_pre_posZ anti_aircraft_missile_set = target_3_posZ anti_aircraft_missile_set
+
+#取得目標3位移量
+function anti_aircraft_missile:advance_range/launching_1/3/displacement
+
+#將目標3的XYZ座標作為前一個XYZ座標
+scoreboard players operation target_3_pre_posX anti_aircraft_missile_set = target_3_posX anti_aircraft_missile_set
+scoreboard players operation target_3_pre_posY anti_aircraft_missile_set = target_3_posY anti_aircraft_missile_set
+scoreboard players operation target_3_pre_posZ anti_aircraft_missile_set = target_3_posZ anti_aircraft_missile_set
