@@ -14,6 +14,11 @@
 #記分板
 #function public:set/scoreboard
 
+    #計時器
+
+        #建立計時器記分板
+        scoreboard objectives add pubic_time dummy
+
     #檢測血量
 
         #建立血量記分板
