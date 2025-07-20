@@ -46,7 +46,7 @@
     #execute if score shelling mortar_parameter matches 2 run tellraw @a [{"text":"砲擊座標：","color":"yellow","clickEvent":{"action":"run_command","value":"/execute if entity @s[tag=mortar_parameter] positioned ~ ~ ~ run function superb_warfare:mortar/search/search2"},"hoverEvent":{"action":"show_text", "value":[{"text":"記得找好掩護","italic":true}]}},{"selector":"@s","color":"yellow","clickEvent":{"action":"run_command","value":"/execute if entity @s[tag=mortar_parameter] positioned ~ ~ ~ run function superb_warfare:mortar/search/search2"},"hoverEvent":{"action":"show_text", "value":[{"text":"記得找好掩護","italic":true}]}}]
 
     #自己作為座標[非OP]
-    execute if score shelling mortar_parameter matches 2 run tellraw @a [{"text":"砲擊座標：","color":"yellow","clickEvent":{"action":"run_command","value":"/execute as @s[tag=mortar_parameter] run scoreboard players set @s mortar_no_op 1"},"hoverEvent":{"action":"show_text", "value":[{"text":"記得找好掩護","italic":true}]}},{"selector":"@s","color":"yellow","clickEvent":{"action":"run_command","value":"/execute as @s[tag=mortar_parameter] run scoreboard players set @s mortar_no_op 1"},"hoverEvent":{"action":"show_text", "value":[{"text":"記得找好掩護","italic":true}]}}]
+    execute if score shelling mortar_parameter matches 2 run tellraw @a [{"text":"砲擊座標：","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger mortar_no_op set 1"},"hoverEvent":{"action":"show_text", "value":[{"text":"記得找好掩護","italic":true}]}},{"selector":"@s","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger mortar_no_op set 1"},"hoverEvent":{"action":"show_text", "value":[{"text":"記得找好掩護","italic":true}]}}]
 
 #砲擊目標
 
