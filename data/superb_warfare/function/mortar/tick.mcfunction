@@ -22,11 +22,11 @@
 
             #歸零
 
-                #目標
-                execute if score target mortar_time matches 1200.. run scoreboard players set target mortar_time 0
-
                 #再次廣播自動搜索砲擊目標
                 execute if score target mortar_time matches 1200.. run scoreboard players set open mortar_auto 0
+
+                #目標
+                execute if score target mortar_time matches 1200.. run scoreboard players set target mortar_time 0
 
         #計時器
         function superb_warfare:mortar/timer

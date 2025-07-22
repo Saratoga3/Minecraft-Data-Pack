@@ -96,9 +96,14 @@
         #不存在自動搜索砲擊目標
         execute unless score target mortar_auto matches 0 unless entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] run scoreboard players set target mortar_auto 0
 
+#校正
+
+    #目標
+    execute unless score target mortar_auto matches 1 if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] run scoreboard players set target mortar_auto 1
+
 #回報狀態
 
-    #
+    #迫擊砲陣地
     function superb_warfare:mortar/tellraw/tellraw2
 
 #移除迫擊砲陣地
