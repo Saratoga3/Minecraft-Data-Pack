@@ -21,8 +21,22 @@
         #
         scoreboard objectives add mortar_time dummy
 
+        #歸零
+        scoreboard players set target mortar_time 0
+
         #
         #scoreboard objectives setdisplay sidebar mortar_time
+
+    #迫擊砲自動
+
+        #
+        scoreboard objectives remove mortar_auto
+
+        #
+        scoreboard objectives add mortar_auto dummy
+
+        #
+        #scoreboard objectives setdisplay sidebar mortar_auto
 
     #抽獎機率
 
@@ -56,7 +70,7 @@
         execute unless score count mortar_parameter matches 0.. run scoreboard players set count mortar_parameter 0
 
         #
-        scoreboard objectives setdisplay sidebar mortar_parameter
+        #scoreboard objectives setdisplay sidebar mortar_parameter
 
     #非OP玩家
 
