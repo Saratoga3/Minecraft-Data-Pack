@@ -13,7 +13,7 @@
         #
         #scoreboard objectives setdisplay sidebar mortar_positions
 
-    #開火時間
+    #迫擊砲時間
 
         #
         scoreboard objectives remove mortar_time
@@ -113,3 +113,5 @@
     #設計使用者輸入不可選擇的炮擊座標需要回報該座標不可選擇
 
     #設計自動鎖敵不可選擇頭頂有方塊的敵對生物
+
+    #設計記憶系統，儲存使用者輸入的射擊參數，使其不會被覆蓋掉
