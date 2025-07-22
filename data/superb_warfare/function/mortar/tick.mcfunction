@@ -20,7 +20,7 @@
             #計時
             execute if score open mortar_auto matches 1 run scoreboard players add target mortar_time 1
 
-            #歸零
+            #歸零(冷卻系統)
 
                 #再次廣播自動搜索砲擊目標
                 execute if score target mortar_time matches 1200.. run scoreboard players set open mortar_auto 0
