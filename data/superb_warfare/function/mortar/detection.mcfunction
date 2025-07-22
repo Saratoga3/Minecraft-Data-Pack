@@ -81,13 +81,20 @@
     #mortar_1
     execute as mortar_1 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^1 ^ ^1 rotated ~30 20 run tp ~ ~ ~
 
-#計時器歸零
+#歸零
 
-    #不存在目標
-    execute unless score fire mortar_time matches 0 unless entity @e[tag=mortar_target] run scoreboard players set fire mortar_time 0
+    #迫擊砲時間
 
-    #不存在迫擊砲1
-    execute unless score fire mortar_time matches 0 unless entity @e[tag=mortar_1,type=armor_stand] run scoreboard players set fire mortar_time 0
+        #不存在目標
+        execute unless score fire mortar_time matches 0 unless entity @e[tag=mortar_target] run scoreboard players set fire mortar_time 0
+
+        #不存在迫擊砲1
+        execute unless score fire mortar_time matches 0 unless entity @e[tag=mortar_1,type=armor_stand] run scoreboard players set fire mortar_time 0
+
+    #開火參數
+
+        #不存在目標
+        execute unless score target mortar_parameter matches 0 unless entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] run scoreboard players set target mortar_parameter 0
 
 #回報狀態
 
