@@ -106,18 +106,18 @@
 #輸入射擊參數
 
     #散布模式
-    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_parameter matches 0 unless score spread mortar_parameter matches 1 run scoreboard players set spread mortar_parameter 1
+    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_auto matches 0 unless score spread mortar_parameter matches 1 run scoreboard players set spread mortar_parameter 1
 
     #砲擊模式
-    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_parameter matches 0 unless score bombardment mortar_parameter matches 1 run scoreboard players set bombardment mortar_parameter 1
+    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_auto matches 0 unless score bombardment mortar_parameter matches 1 run scoreboard players set bombardment mortar_parameter 1
 
     #開火模式
-    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_parameter matches 0 unless score firing mortar_parameter matches 1..2 run scoreboard players set firing mortar_parameter 1
+    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_auto matches 0 unless score firing mortar_parameter matches 1..2 run scoreboard players set firing mortar_parameter 1
 
 #廣播自動搜索砲擊目標
 
     #
-    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_parameter matches 0 run function superb_warfare:mortar/tellraw/tellraw4
+    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] if score target mortar_auto matches 0 if score target mortar_time matches 0 run function superb_warfare:mortar/tellraw/tellraw4
 
 #目標發光
 

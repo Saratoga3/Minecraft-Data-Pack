@@ -2,8 +2,11 @@
 
 #確保不會重複廣播自動搜索砲擊目標
 
-    #
-    execute unless score target mortar_parameter matches 1 run scoreboard players set target mortar_parameter 1
+    #目標
+    execute unless score target mortar_auto matches 1 run scoreboard players set target mortar_auto 1
+
+    #再次廣播自動搜索砲擊目標
+    execute unless score open mortar_auto matches 1 run scoreboard players set open mortar_auto 1
 
 #回報狀態
 

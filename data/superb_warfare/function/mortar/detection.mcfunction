@@ -93,8 +93,8 @@
 
     #開火參數
 
-        #不存在目標
-        execute unless score target mortar_parameter matches 0 unless entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] run scoreboard players set target mortar_parameter 0
+        #不存在自動搜索砲擊目標
+        execute unless score target mortar_auto matches 0 unless entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] run scoreboard players set target mortar_auto 0
 
 #回報狀態
 
