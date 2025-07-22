@@ -106,7 +106,7 @@
 #輸入射擊參數
 
     #散布模式
-    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] unless score spread mortar_parameter matches 1 run scoreboard players set spread mortar_parameter 1
+    execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] unless score spread mortar_parameter matches 1..2 run scoreboard players set spread mortar_parameter 1
 
     #砲擊模式
     execute if entity @e[tag=mortar_target,tag=!hostile_mob,type=!minecraft:area_effect_cloud] unless score bombardment mortar_parameter matches 1 run scoreboard players set bombardment mortar_parameter 1
