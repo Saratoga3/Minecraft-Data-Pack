@@ -36,14 +36,24 @@
 
 #刷新檢測
 
-    #存在mortar_2
-    execute if entity @e[tag=mortar_1,type=armor_stand] unless entity mortar_1 if entity mortar_2 run function superb_warfare:mortar/load
+    #有目標
 
-    #存在mortar_1
-    execute if entity @e[tag=mortar_1,type=armor_stand] unless entity mortar_2 if entity mortar_1 run function superb_warfare:mortar/load
+        #存在mortar_2
+        #execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_1 if entity mortar_2 run function superb_warfare:mortar/load
 
-    #不存在mortar_2、mortar_1
-    execute if entity @e[tag=mortar_1,type=armor_stand] unless entity mortar_2 unless entity mortar_1 run function superb_warfare:mortar/load
+        #存在mortar_1
+        #execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_2 if entity mortar_1 run function superb_warfare:mortar/load
+
+        #不存在mortar_2、mortar_1
+        #execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_2 unless entity mortar_1 run function superb_warfare:mortar/load
+
+    #無目標
+
+        #存在mortar_2
+        execute unless entity @e[tag=mortar_target] if entity mortar_2 run player mortar_2 kill
+
+        #存在mortar_1
+        execute unless entity @e[tag=mortar_target] if entity mortar_1 run player mortar_1 kill
 
 #使用者與迫擊砲物動的物品
 

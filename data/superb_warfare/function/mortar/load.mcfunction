@@ -15,8 +15,8 @@
 
     #迫擊砲時間
 
-        #
-        scoreboard objectives remove mortar_time
+        #(不啟用)
+        #scoreboard objectives remove mortar_time
 
         #
         scoreboard objectives add mortar_time dummy
@@ -29,8 +29,8 @@
 
     #迫擊砲自動
 
-        #
-        scoreboard objectives remove mortar_auto
+        #(不啟用)
+        #scoreboard objectives remove mortar_auto
 
         #
         scoreboard objectives add mortar_auto dummy
