@@ -1,7 +1,7 @@
 #計時器
 
     #計時
-    execute at @e[tag=mortar_1,type=armor_stand] at @e[tag=mortar_target,limit=1,distance=50..600] run scoreboard players add fire mortar_time 1
+    scoreboard players add fire mortar_time 1
 
     #模式選擇(自動)
 
