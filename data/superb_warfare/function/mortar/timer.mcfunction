@@ -6,16 +6,16 @@
     #模式選擇(自動)
 
         #單點砲擊
-        execute at @e[tag=mortar_1,type=armor_stand] at @e[tag=mortar_target,limit=1,distance=50..600] if score count mortar_parameter matches 0 if score bombardment mortar_parameter matches 2 run function superb_warfare:mortar/model/single_point_bombardment
+        execute if score count mortar_parameter matches 0 if score bombardment mortar_parameter matches 2 run function superb_warfare:mortar/model/single_point_bombardment
 
         #多點砲擊
-        execute at @e[tag=mortar_1,type=armor_stand] at @e[tag=mortar_target,limit=1,distance=50..600] if score count mortar_parameter matches 0 if score bombardment mortar_parameter matches 1 run function superb_warfare:mortar/model/more_bombardment
+        execute if score count mortar_parameter matches 0 if score bombardment mortar_parameter matches 1 run function superb_warfare:mortar/model/more_bombardment
 
         #同時開火
-        execute at @e[tag=mortar_1,type=armor_stand] at @e[tag=mortar_target,limit=1,distance=50..600] if score count mortar_parameter matches 0 if score firing mortar_parameter matches 1 run function superb_warfare:mortar/model/simultaneous_firing
+        execute if score count mortar_parameter matches 0 if score firing mortar_parameter matches 1 run function superb_warfare:mortar/model/simultaneous_firing
 
         #持續開火
-        execute at @e[tag=mortar_1,type=armor_stand] at @e[tag=mortar_target,limit=1,distance=50..600] if score count mortar_parameter matches 0 if score firing mortar_parameter matches 2 run function superb_warfare:mortar/model/continuous_firing
+        execute if score count mortar_parameter matches 0 if score firing mortar_parameter matches 2 run function superb_warfare:mortar/model/continuous_firing
 
     #模式選擇(手動)
 

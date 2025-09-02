@@ -34,27 +34,6 @@
     #
     execute unless entity @e[tag=mortar_5,type=armor_stand] as @e[name="迫擊砲5",type=armor_stand] run tag @s add mortar_5
 
-#刷新檢測
-
-    #有目標
-
-        #存在mortar_2
-        #execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_1 if entity mortar_2 run function superb_warfare:mortar/load
-
-        #存在mortar_1
-        #execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_2 if entity mortar_1 run function superb_warfare:mortar/load
-
-        #不存在mortar_2、mortar_1
-        #execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_2 unless entity mortar_1 run function superb_warfare:mortar/load
-
-    #無目標
-
-        #存在mortar_2
-        execute unless entity @e[tag=mortar_target] if entity mortar_2 run player mortar_2 kill
-
-        #存在mortar_1
-        execute unless entity @e[tag=mortar_target] if entity mortar_1 run player mortar_1 kill
-
 #使用者與迫擊砲物動的物品
 
     #射擊諸元-改
@@ -78,18 +57,24 @@
     #
     function superb_warfare:mortar/search/search4
 
-#計時器
+#刷新檢測
 
-    #(移至tick.mcfunction執行)
-    #function superb_warfare:mortar/timer
+    #存在mortar_2
+    execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_1 if entity mortar_2 run function superb_warfare:mortar/load
 
-#固定假人
+    #存在mortar_1
+    execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_2 if entity mortar_1 run function superb_warfare:mortar/load
+
+    #不存在mortar_2、mortar_1
+    execute if entity @e[tag=mortar_1,type=armor_stand] if entity @e[tag=mortar_target] unless entity mortar_2 unless entity mortar_1 run function superb_warfare:mortar/load
+
+#固定假人(不啟用)
 
     #mortar_2
-    execute as mortar_2 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^ ^ ^1 rotated ~ 20 run tp ~ ~ ~
+    #execute as mortar_2 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^ ^ ^1 rotated ~ 20 run tp ~ ~ ~
 
     #mortar_1
-    execute as mortar_1 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^1 ^ ^1 rotated ~30 20 run tp ~ ~ ~
+    #execute as mortar_1 unless entity @e[tag=mortar_target] at @e[tag=mortar_1,type=armor_stand] positioned ^1 ^ ^1 rotated ~30 20 run tp ~ ~ ~
 
 #歸零
 
@@ -136,7 +121,7 @@
 #刪除假人
 
     #mortar_2
-    execute unless entity @e[tag=mortar_1,type=armor_stand] if entity mortar_2 run player mortar_2 kill
+    execute unless entity @e[tag=mortar_target] if entity mortar_2 run player mortar_2 kill
 
     #mortar_1
-    execute unless entity @e[tag=mortar_1,type=armor_stand] if entity mortar_1 run player mortar_1 kill
+    execute unless entity @e[tag=mortar_target] if entity mortar_1 run player mortar_1 kill

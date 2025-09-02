@@ -22,7 +22,7 @@
         scoreboard objectives add mortar_time dummy
 
         #歸零
-        scoreboard players set target mortar_time 0
+        #scoreboard players set target mortar_time 0
 
         #
         #scoreboard objectives setdisplay sidebar mortar_time
