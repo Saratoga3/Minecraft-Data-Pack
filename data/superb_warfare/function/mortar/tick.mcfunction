@@ -29,4 +29,4 @@
                 execute if score target mortar_time matches 1200.. run scoreboard players set target mortar_time 0
 
         #計時器
-        execute at @e[tag=mortar_1,type=armor_stand] at @e[tag=mortar_target,limit=1,distance=50..600] run function superb_warfare:mortar/timer
+        execute at @e[tag=mortar_1,type=armor_stand] at @e[tag=mortar_target,limit=1,distance=50..600] if entity mortar_2 if entity mortar_1 run function superb_warfare:mortar/timer
