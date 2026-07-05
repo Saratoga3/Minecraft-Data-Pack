@@ -1,6 +1,6 @@
 # Minecraft Data Pack
 
-這是一個使用 Minecraft 原生 `.mcfunction` 語言撰寫的資料包，透過指令自動化遊戲機制、添加新功能或擴展原有的玩法。
+這是一個使用 Minecraft 原生 `.mcfunction` 語言撰寫的資料包，透過指令實作複雜的系統。
 
 # 專案結構
 
