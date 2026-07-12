@@ -5,6 +5,11 @@
     #
     execute at @e[tag=mortar_1,type=armor_stand] unless entity mortar_1 run player mortar_1 spawn at ^1 ^ ^1 facing ~30 20 in minecraft:overworld in creative
 
+#觀測手蹲下
+
+    #
+    player mortar_1 sneak
+
 #清除效果
 
     #
