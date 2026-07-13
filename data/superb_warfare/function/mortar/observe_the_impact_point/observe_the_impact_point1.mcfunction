@@ -19,6 +19,9 @@ execute at mortar_1 if block ~ ~-1 ~ air run fill ~ ~-1 ~ ~ ~-1 ~ glass
 #觀測落彈點
 
     #
+    player mortar_1 sneak
+
+    #
     player mortar_1 look down
 
     #

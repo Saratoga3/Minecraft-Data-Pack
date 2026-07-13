@@ -8,7 +8,7 @@
 #觀測手蹲下
 
     #
-    player mortar_1 sneak
+    #player mortar_1 sneak
 
 #清除效果
 
